@@ -11,6 +11,7 @@ def build(self):
     self._filter()
     return self.df
     
+# e se o dataframe estiver vazio apos o primero slice???
 
 # ------------------------------------ #
 
@@ -50,3 +51,4 @@ class ReportTripCase(TestCase):
         # refatorar
         self.df['columnn'] = 1 
         self.assertEqual(self.df['column'], self.alert)
+        
